@@ -293,6 +293,69 @@
   text-transform: capitalize;
 }
 
+.info {
+  background-color: #165166;
+  position: relative;
+}
+
+.info__one {
+  position: absolute;
+  left: 154px;
+  bottom: 56px;
+}
+
+.info__two {
+  border-radius: 50%;
+  height: 600px;
+  width: 500px;
+  z-index: 1;
+}
+
+.info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__plants {
+  width: 583px;
+}
+
+.info__title {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.info__descr {
+  color: #BCB9B9;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 54px;
+}
+
+.info__btn {
+  border-radius: 5px;
+  background: #54C352;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 24px 44px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
