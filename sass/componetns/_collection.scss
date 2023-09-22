@@ -1,0 +1,19 @@
+.collection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection__btn {
+    border-radius: 5px;
+    background: #54C352;
+    padding: 24px 49px;
+}
+.collection_title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

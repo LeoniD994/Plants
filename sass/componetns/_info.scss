@@ -1,36 +1,47 @@
 .info{
     background-color: #165166;
-    position: relative;
+    padding-top: 150px;
+
 }
 .info__one {
     position: absolute;
-    left: 154px;
-    bottom: 56px;
+    left: 124px;
+    bottom: 106px;
 }
 
 .info__two {
+    position: absolute;
     border-radius: 50%;
     height: 600px;
     width: 500px;
     z-index: 1;
+    left: 404px;
+    top: 0;
+
 }
 
 .info__container{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
 }
 .info__plants{
     width: 583px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
 }
 
 .info__title {
     color: #FFF;
-    font-family: Poppins;
+    font-family: 'Poppins',sans-serif;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 12px;
+
 }
 
 .info__descr {
@@ -53,4 +64,5 @@
     font-weight: 500;
     line-height: normal;
     padding: 24px 44px;
+    margin-bottom: 191px;
 }

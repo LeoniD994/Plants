@@ -270,6 +270,7 @@
   padding: 40px;
   text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .best__name {
@@ -285,48 +286,59 @@
 .best__info {
   color: #CDCDCD;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  text-transform: capitalize;
 }
 
 .info {
   background-color: #165166;
-  position: relative;
+  padding-top: 150px;
 }
 
 .info__one {
   position: absolute;
-  left: 154px;
-  bottom: 56px;
+  left: 124px;
+  bottom: 106px;
 }
 
 .info__two {
+  position: absolute;
   border-radius: 50%;
   height: 600px;
   width: 500px;
   z-index: 1;
+  left: 404px;
+  top: 0;
 }
 
 .info__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .info__plants {
   width: 583px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
 }
 
 .info__title {
   color: #FFF;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 52px;
   font-style: normal;
   font-weight: 700;
@@ -354,6 +366,72 @@
   font-weight: 500;
   line-height: normal;
   padding: 24px 44px;
+  margin-bottom: 191px;
+}
+
+.benefit {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.benefit__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+
+.benefit__item {
+  border-radius: 40px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 4px 0px #05FF00;
+          box-shadow: 0px 0px 4px 0px #05FF00;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.benefit__title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+
+.benefit__imfo {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.collection__btn {
+  border-radius: 5px;
+  background: #54C352;
+  padding: 24px 49px;
+}
+
+.collection_title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 html {
