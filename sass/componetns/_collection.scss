@@ -1,14 +1,22 @@
 .collection {
     display: flex;
     justify-content: space-around;
+    background: #165166;
+    max-height: 672px;
 }
 
 .collection__btn {
     border-radius: 5px;
     background: #54C352;
     padding: 24px 49px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-.collection_title{
+.collection__title{
     color: #FFF;
     text-align: center;
     font-family: 'Poppins',sans-serif;
@@ -16,4 +24,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.collection__flex{
+    display: flex;
 }
