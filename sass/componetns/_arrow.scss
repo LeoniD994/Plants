@@ -2,7 +2,7 @@
     margin: 30px;
     position: absolute;
     left: 300px;
-    bottom: 400px;
+    bottom: 230px;
 }
 
 .arrow-down span {
@@ -37,5 +37,42 @@
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+@media (max-width:1500px) {
+    .arrow-down {
+        left: 300px;
+        bottom: 150px;
+    }
+}
+@media (max-width:1125px){
+    .arrow-down span{
+        width: 40px;
+        height: 40px;
+    }
+    .arrow-down {
+        left: 300px;
+        bottom: 110px;
+        }
+}
+@media (max-width:1000px) {
+    .arrow-down span {
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow-down {
+        left: 200px;
+    }
+}
+@media (max-width:800px) {
+    .arrow-down span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow-down {
+        left: 200px;
+        bottom: 90px;
     }
 }

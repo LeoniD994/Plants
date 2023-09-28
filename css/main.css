@@ -5,7 +5,7 @@
   z-index: 1;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .container-header {
@@ -81,10 +81,11 @@
   }
 }
 @media (max-width: 800px) {
-  .header__list {
-    display: none;
+  .header__logo {
+    width: 130px;
+    height: 40px;
   }
-  .menu {
+  .header__list {
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
@@ -92,11 +93,11 @@
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 0;
     right: 0;
-    width: 300px;
-    background-color: #000;
+    width: 320px;
+    background-color: rgb(41, 35, 33);
     color: #fff;
     padding: 100px 0;
     -webkit-box-orient: vertical;
@@ -106,6 +107,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .hader__connect {
+    gap: 10px;
   }
   .menu-btn {
     display: -webkit-box;
@@ -155,12 +159,12 @@
 }
 
 .hero__container {
-  width: 709px;
+  max-width: 709px;
 }
 
 .hero__subtitle {
   color: #FFF;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -227,7 +231,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 50px;
-  padding: 107px;
+  padding-left: 107px;
+  padding-right: 107px;
 }
 
 .hero__arrow {
@@ -248,11 +253,218 @@
   line-height: normal;
 }
 
+@media (max-width: 1600px) {
+  .hero__img {
+    width: 600px;
+    height: 700px;
+    top: 200px;
+  }
+}
+@media (max-width: 1500px) {
+  .hero {
+    padding-bottom: 30px;
+  }
+  .hero__list {
+    gap: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+@media (max-width: 1340px) {
+  .hero__img {
+    width: 500px;
+    height: 600px;
+    top: 200px;
+  }
+  .hero__list {
+    gap: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .hero__link {
+    font-size: 35px;
+  }
+  .hero__title {
+    font-size: 70px;
+  }
+  .hero__title-color {
+    font-size: 55px;
+  }
+  .hero__subtitle {
+    max-width: 600px;
+  }
+}
+@media (max-width: 1125px) {
+  .hero__img {
+    width: 400px;
+    height: 500px;
+    top: 200px;
+  }
+  .hero__list {
+    gap: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .hero__button {
+    padding: 20px 30px;
+    font-size: 22px;
+    margin-bottom: 100px;
+  }
+  .hero__link {
+    font-size: 35px;
+  }
+  .hero__title {
+    font-size: 55px;
+    padding-top: 230px;
+    max-width: 600px;
+  }
+  .hero__subtitle {
+    max-width: 500px;
+  }
+  .hero__order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 90px;
+    margin-bottom: 50px;
+  }
+  .hero__order span {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero__link {
+    font-size: 25px;
+  }
+  .hero__order span {
+    font-size: 40px;
+  }
+  .here__p {
+    font-size: 25px;
+  }
+  .hero__title {
+    font-size: 40px;
+    padding-top: 230px;
+    max-width: 450px;
+    line-height: 70px;
+  }
+  .hero__title-color {
+    font-size: 40px;
+  }
+  .hero__subtitle {
+    max-width: 450px;
+  }
+  .hero__button {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 840px) {
+  .hero__img {
+    width: 350px;
+    height: 450px;
+    top: 150px;
+  }
+  .hero__link {
+    font-size: 15px;
+  }
+  .hero__order span {
+    font-size: 35px;
+  }
+  .here__p {
+    font-size: 25px;
+  }
+  .hero__title {
+    font-size: 35px;
+    padding-top: 150px;
+    max-width: 400px;
+    line-height: 50px;
+  }
+  .hero__title-color {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .hero__subtitle {
+    max-width: 400px;
+    text-align: start;
+  }
+  .hero__button {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 800px) {
+  .hero__img {
+    position: static;
+    width: 800px;
+    height: 800px;
+    margin-bottom: 10px;
+  }
+  .hero__title {
+    text-align: center;
+    max-width: 100%;
+    padding-top: 100px;
+  }
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__title-color {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero__subtitle {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .hero__img {
+    position: static;
+    width: 700px;
+    height: 700px;
+    margin-bottom: 10px;
+  }
+  .hero__title {
+    text-align: center;
+    max-width: 100%;
+    padding-top: 100px;
+  }
+  .hero__button {
+    padding: 10px 15px;
+    margin-bottom: 40px;
+  }
+  .hero__order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
 .arrow-down {
   margin: 30px;
   position: absolute;
   left: 300px;
-  bottom: 400px;
+  bottom: 230px;
 }
 
 .arrow-down span {
@@ -307,6 +519,41 @@
     opacity: 0;
     -webkit-transform: rotate(45deg) translate(20px, 20px);
             transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+@media (max-width: 1500px) {
+  .arrow-down {
+    left: 300px;
+    bottom: 150px;
+  }
+}
+@media (max-width: 1125px) {
+  .arrow-down span {
+    width: 40px;
+    height: 40px;
+  }
+  .arrow-down {
+    left: 300px;
+    bottom: 110px;
+  }
+}
+@media (max-width: 1000px) {
+  .arrow-down span {
+    width: 30px;
+    height: 30px;
+  }
+  .arrow-down {
+    left: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .arrow-down span {
+    width: 20px;
+    height: 20px;
+  }
+  .arrow-down {
+    left: 200px;
+    bottom: 90px;
   }
 }
 .best {
