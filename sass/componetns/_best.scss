@@ -44,7 +44,7 @@
 
 .best__name {
     color: #FFF;
-    font-family: Poppins;
+    font-family: 'Poppins',sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -60,5 +60,27 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-
+}
+@media (max-width:1300px) {
+    .best__list{
+        gap: 70px;
+    }
+}
+@media (max-width:1100px) {
+    .best__list {
+        gap: 50px;
+    }
+}
+@media (max-width:800px) {
+    .best__list {
+        flex-direction: column;
+        gap: 120px;
+    }
+    .best__name{
+        font-size: 35px;
+    }
+    .best{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }

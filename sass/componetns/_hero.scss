@@ -315,4 +315,8 @@
         text-align: center;
         gap: 30px;
     }
+    .hero__list{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
