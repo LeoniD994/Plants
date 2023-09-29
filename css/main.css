@@ -830,6 +830,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .info__title {
+    margin-top: 30px;
+  }
   .info__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -838,18 +841,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .info__container .info__one {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   .info__descr {
     font-size: 20px;
@@ -862,9 +853,29 @@
   .info__one {
     position: static;
     left: 200px;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    width: 300px;
+    height: 390px;
   }
   .info__two {
     left: 400px;
+    width: 300px;
+    height: 390px;
+  }
+}
+@media (max-width: 730px) {
+  .info__two {
+    left: 300px;
+  }
+}
+@media (max-width: 630px) {
+  .info__two {
+    position: static;
+  }
+  .info__one {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 .benefit {
@@ -913,6 +924,55 @@
   line-height: normal;
 }
 
+@media (max-width: 1400px) {
+  .benefit__list {
+    gap: 30px;
+  }
+  .benefit__item {
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .benefit {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .benefit__list {
+    gap: 10px;
+  }
+  .benefit__item {
+    padding: 10px 10px;
+  }
+  .benefit__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .benefit__info {
+    font-size: 15px;
+  }
+  .benefit__img {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .benefit__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .benefit__item {
+    padding: 20px 20px;
+  }
+}
 .collection {
   background: #165166;
   max-height: 672px;
@@ -989,6 +1049,11 @@
   top: 98px;
 }
 
+@media (max-width: 1200px) {
+  .collection__plants {
+    top: 75px;
+  }
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

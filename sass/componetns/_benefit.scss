@@ -40,3 +40,46 @@
     font-weight: 400;
     line-height: normal;
 }
+@media (max-width:1400px) {
+    .benefit__list{
+        gap: 30px;
+    }
+    .benefit__item{
+        padding: 30px 40px;
+    }
+}
+@media (max-width:1000px) {
+    .benefit{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .benefit__list {
+        gap: 10px;
+    }
+
+    .benefit__item {
+        padding: 10px 10px;
+    }
+    .benefit__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .benefit__info{
+        font-size: 15px;
+    }
+    .benefit__img{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:800px){
+    .benefit__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .benefit__item {
+        padding: 20px 20px;
+    }
+}
